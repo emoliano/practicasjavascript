@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cotizacion</title>
+</head>
+<center>
+<body>
+    <div class="container">
+        <h2>Cotización de Automóvil</h2>
+        <label for="numCotizacion"  >Número de Cotización</label>
+        <input type="text" id="numCotizacion"  min="1" max="600" placeholder="Ingrese el número de cotización">
+
+        <ul for="descripcion">Descripción del Automóvil</ul>
+        <li><input type="checkbox" id="manual" name="descripcion"> <label for="manual">manual</label></li>
+        <li><input type="checkbox" id="automatico" name="descripcion"> <label for="automatico">automatico</label></li>
+        
+
+        <label for="precio">Precio del Automóvil</label>
+        <input type="number" id="precio" placeholder="Ingrese el precio del automóvil" step="0.01">
+
+        <label for="porcentajePagoInicial">enganche (%)</label>
+        <input type="number" id="porcentajePagoInicial" min="25" max="100" placeholder="Ingrese el porcentaje de pago inicial" step="0.01">
+
+        <label for="plazo">Plazo</label>
+        <input type="number" id="plazo" min="6" max="48"  placeholder="Ingrese el plazo del crédito en meses">
+
+        <button id="calcularCotizacion">Cotización</button>
+
+        <h3>Resultados</h3>
+        <div id="resultados">
+            <p><strong>enganche:</strong> $<span id="pagoInicial">0.00</span></p>
+            <p><strong>restante:</strong> $<span id="totalFinanciar">0.00</span></p>
+            <p><strong>mensualidades:</strong> $<span id="pagoMensual">0.00</span></p>
+        </div>
+    </div>
+    <script src="../JS/cotizacion.js"></script>
+</center>
+</body>
+</html>
